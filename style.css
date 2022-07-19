@@ -26,7 +26,7 @@ main .keys{
     grid-gap: 5px;
 }
 
-.num-0 {
+.span-two {
     grid-column: 1 / span 2;
 }
 
