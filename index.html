@@ -10,29 +10,30 @@
 <body>
 
     <main>
-        
-        <input type="number" class="screen" value="0" readonly>
-    
+        <div class="screen">
+            <div class="full-operation">...</div>
+            <div class="current-input">0</div>
+        </div>
         <div class="keys">
-            <button>AC</button>
-            <button>+/-</button>
-            <button>%</button>
-            <button>/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>*</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-            <button class="num-0">0</button>
-            <button>.</button>
-            <button>=</button>
+            <button data-attr="clear" class="clear">AC</button>
+            <button data-attr="sign" class="sign">+/-</button>
+            <button data-attr="percent" class="mod">%</button>
+            <button data-attr="operator" class="divide">/</button>
+            <button data-attr="number">7</button>
+            <button data-attr="number">8</button>
+            <button data-attr="number">9</button>
+            <button data-attr="operator" class="multiply">*</button>
+            <button data-attr="number">4</button>
+            <button data-attr="number">5</button>
+            <button data-attr="number">6</button>
+            <button data-attr="operator" class="subtract">-</button>
+            <button data-attr="number">1</button>
+            <button data-attr="number">2</button>
+            <button data-attr="number">3</button>
+            <button data-attr="operator" class="add">+</button>
+            <button class="num-0" data-attr="number">0</button>
+            <button data-attr="number" class="decimal">.</button>
+            <button data-attr="operator" class="calculate">=</button>
         </div>
     </main>
 
