@@ -2,7 +2,9 @@ const numbers = document.querySelectorAll('[data-attr=number]');
 const operators = document.querySelectorAll('[data-attr=operator]');
 const prevOperations = document.querySelector('.full-operation');
 const currInput = document.querySelector('.current-input');
-const clearOp = document.querySelector('.clear')
+const clearOp = document.querySelector('.clear');
+const percentOp = document.querySelector('.percent')
+
 
 let firstNum = null;
 let secondNum = null;
@@ -13,6 +15,12 @@ let reset = false;
 numbers.forEach(num => num.addEventListener('click', numEnter));
 operators.forEach(op => op.addEventListener('click', opEnter));
 clearOp.addEventListener('click', clear);
+percentOp.addEventListener('click', convertToPercent);
+
+function convertToPercent(e) {
+    num = Number(currInput.textContent);
+    currInput.textContent = num / 100;
+}
 
 function clear() {
     firstNum = null;
